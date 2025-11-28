@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Lato, Roboto_Slab } from "next/font/google";
 import "./globals.css";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -30,9 +32,15 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`${lato.variable} ${robotoSlab.variable} antialiased`}
+        className={`${lato.variable} ${robotoSlab.variable} antialiased bg-sand text-primary`}
       >
-        {children}
+        <div className="min-h-screen">
+          <SiteHeader />
+          <main className="min-h-[75vh] bg-gradient-to-b from-white via-sand to-sand">
+            {children}
+          </main>
+          <SiteFooter />
+        </div>
       </body>
     </html>
   );
