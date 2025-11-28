@@ -11,6 +11,15 @@ export default function ProjectsPage() {
         title="Dowody sprawczości FPbG"
         description="Każdy projekt jest cyfrowym artefaktem audytowym: zawiera metryki, partnerów i odnośniki do źródeł zewnętrznych."
       />
+      <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl bg-sand px-4 py-3 text-sm text-primary/80">
+        <span>Case studies zrealizowanych inicjatyw znajdziesz w dedykowanej sekcji.</span>
+        <Link
+          href="/projekty/zrealizowane"
+          className="font-semibold text-accent hover:text-accent-hover"
+        >
+          Zrealizowane projekty →
+        </Link>
+      </div>
 
       <div className="grid gap-4 md:grid-cols-2">
         {projects.map((project) => (
