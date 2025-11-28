@@ -1,1 +1,2 @@
 ﻿1. Domyslnie ustaw aplikacje na porcie 3000
+2. Oczy‘>ŽÅ szablon projektu co zosta‘' automatycznie wygenerowany przy tworzeniu nowego projektu przy u‘•yciu Next.js tak aby zosta‘'y tylko to co niezbŽtdne do utworzenia nowego projektu ca‘'kowicie od nowa.
