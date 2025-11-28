@@ -1,10 +1,9 @@
-1. Domyslnie ustaw aplikacje na porcie 3000
-2. Oczyść szablon projektu co został automatycznie wygenerowany przy tworzeniu nowego projektu przy użyciu Next.js tak aby zostały tylko to co niezbędne do utworzenia nowego projektu całkowicie od nowa.
-3. W katalogu scripts stwórz skrypty zapewniające kompletny przepływ pracy dla programisty: zainicjowanie projektu, zdefiniowanie jego struktury, automatyczne generowanie kodu szablonowego, sprawdzenie konfiguracji
-4. Zaprojektuj i stwórz pełny projekt nowoczesnej i profesjonalnej strony internetowej dla "Fundacja Przyjaźń bez Granic" zgodnie z plikami Specyfikacja Wdrożeniowa Strony WWW Fundacja Przyjaźń bez Granic.md oraz Tworzenie Instrukcji FPbG.md
-5. Jeśli są jeszcze jakieś nieistniejące podstrony (trasy), dorob je.
-6. Używaj w trybie headed Playwright tak abym wiedział jak pracujesz i wykonujesz screenshot.
-7. Użyjwaj rozszerzenia z przeglądarki chrome Lighthouse oraz axe DevTools.
+﻿2. OczyĹ›Ä‡ szablon projektu co zostaĹ‚ automatycznie wygenerowany przy tworzeniu nowego projektu przy uĹĽyciu Next.js tak aby zostaĹ‚y tylko to co niezbÄ™dne do utworzenia nowego projektu caĹ‚kowicie od nowa.
+3. W katalogu scripts stwĂłrz skrypty zapewniajÄ…ce kompletny przepĹ‚yw pracy dla programisty: zainicjowanie projektu, zdefiniowanie jego struktury, automatyczne generowanie kodu szablonowego, sprawdzenie konfiguracji
+4. Zaprojektuj i stwĂłrz peĹ‚ny projekt nowoczesnej i profesjonalnej strony internetowej dla "Fundacja PrzyjaĹşĹ„ bez Granic" zgodnie z plikami Specyfikacja WdroĹĽeniowa Strony WWW Fundacja PrzyjaĹşĹ„ bez Granic.md oraz Tworzenie Instrukcji FPbG.md
+5. JeĹ›li sÄ… jeszcze jakieĹ› nieistniejÄ…ce podstrony (trasy), dorob je.
+6. UĹĽywaj w trybie headed Playwright tak abym wiedziaĹ‚ jak pracujesz i wykonujesz screenshot.
+7. UĹĽyjwaj rozszerzenia z przeglÄ…darki chrome Lighthouse oraz axe DevTools.
 8. Screenshot's maja byc trzymane w katalogu screenshots.
-9. Przetestuj cały projekt i napraw.
-10. Sprawdź zgodność informacji na stronie z plikami Specyfikacja Wdrożeniowa Strony WWW Fundacja Przyjaźń bez Granic.md oraz Tworzenie Instrukcji FPbG.md
+9. Przetestuj caĹ‚y projekt i napraw.
+10. SprawdĹş zgodnoĹ›Ä‡ informacji na stronie z plikami Specyfikacja WdroĹĽeniowa Strony WWW Fundacja PrzyjaĹşĹ„ bez Granic.md oraz Tworzenie Instrukcji FPbG.md
