@@ -1,0 +1,20 @@
+Najpierw przeanalizuj projekt
+Przeanalizuj todo oraz todo_done abys wiedzial co jest do zrobienia a co zostało juz zrobione
+Przeanalizuj Specyfikacja Wdrożeniowa Strony WWW Fundacja Przyjaźń bez Granic.md oraz Tworzenie Instrukcji FPbG.md abys wiedział jak masz wykonać projekt.
+Ponownie przeanalizuj projekt - teraz wiesz juz co zostalo wykonane w projekcie a co nie
+Sprawdz repozytorium zdalne z katalogu głównego (czyli lokalizacja tego pliku w drzewie katalogu projektu)
+Każdą zmianę weryfikuj przez curl, inne testy - naprawiaj do skutku
+Testowanie route'ów i funkcjonalności wykonuj używając Playwright (rozszerzenie do Visual Studio Code) w trybie headed (z włączoną przeglądarką)
+- użyj komendy npm run test:e2e:headed w katalogu strona-dla-fpbg - chcę widzieć w przeglądarce co się dzieje podczas testów.
+Do testowania masz również wykorzystać rozszerzenia w chrome Lighthouse oraz axe DevTools
+Przed rozpoczęciem pracy zapisz bieżący stan w repozytorium abyś mógł cofnąć się do działającej wersji
+Każde zadanie z todo wymaga najpierw stworzenia nowego branchu - realizacji zadania - weryfikacji dokładniej
+- i ewentualna naprawa - przeniesienie zmian do mastera - weryfikacja i ewentualna naprawa - dopiero kolejne zadanie z todo.txt
+Nie możesz przejsc dalej do zadnego zadania bez szczegółowego upewnienia się, że wszystko działa.
+Wszystkie błędy frontu i backendu mają być trzymane w strona-dla-fpbg/logs
+Po naprawie błędów mają być skasowane z logs.
+Po każdej zmianie i teście sprawdzasz również czy błąd się nie pojawił i reagujesz na niego.
+Kod ma być skalowalny i profesjonalny i ma zawierac polskie komentarze.
+Każde wykonane zadanie przenosisz do todo_done.txt w katalogu głównym - od razu po wykonaniu tego zadania.
+Zawsze tworzysz kod wraz z wersją RWD czyli na każde urządzenie.
+Kolejne widoki/ podstrony mają być spójne ze sobą.
