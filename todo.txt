@@ -1,5 +1,4 @@
-﻿4. Zaprojektuj i stwĂłrz peĹ‚ny projekt nowoczesnej i profesjonalnej strony internetowej dla "Fundacja PrzyjaĹşĹ„ bez Granic" zgodnie z plikami Specyfikacja WdroĹĽeniowa Strony WWW Fundacja PrzyjaĹşĹ„ bez Granic.md oraz Tworzenie Instrukcji FPbG.md
-5. JeĹ›li sÄ… jeszcze jakieĹ› nieistniejÄ…ce podstrony (trasy), dorob je.
+﻿5. JeĹ›li sÄ… jeszcze jakieĹ› nieistniejÄ…ce podstrony (trasy), dorob je.
 6. UĹĽywaj w trybie headed Playwright tak abym wiedziaĹ‚ jak pracujesz i wykonujesz screenshot.
 7. UĹĽyjwaj rozszerzenia z przeglÄ…darki chrome Lighthouse oraz axe DevTools.
 8. Screenshot's maja byc trzymane w katalogu screenshots.

@@ -1,3 +1,4 @@
 ﻿1. Domyslnie ustaw aplikacje na porcie 3000
 2. Oczy‘>ŽÅ szablon projektu co zosta‘' automatycznie wygenerowany przy tworzeniu nowego projektu przy u‘•yciu Next.js tak aby zosta‘'y tylko to co niezbŽtdne do utworzenia nowego projektu ca‘'kowicie od nowa.
 3. W katalogu scripts stwÆˆrz skrypty zapewniajŽce kompletny przep‘'yw pracy dla programisty: zainicjowanie projektu, zdefiniowanie jego struktury, automatyczne generowanie kodu szablonowego, sprawdzenie konfiguracji
+4. Zaprojektuj i stwÆˆrz pe‘'ny projekt nowoczesnej i profesjonalnej strony internetowej dla 'Fundacja Przyja‘­‘ bez Granic' zgodnie ze specyfikacjami
