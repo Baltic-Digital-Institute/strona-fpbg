@@ -1,0 +1,63 @@
+#!/usr/bin/env node
+
+/* eslint-disable @typescript-eslint/no-require-imports */
+
+/**
+ * Generuje zrzuty ekranu (desktop/tablet/mobile) dla podanych tras.
+ * Użycie:
+ *    node scripts/screenshot-runner --routes /,/o-fundacji --base http://localhost:3000
+ */
+
+const fs = require("fs");
+const path = require("path");
+const { chromium, devices } = require("@playwright/test");
+
+const projectRoot = path.join(__dirname, "..");
+const args = process.argv.slice(2);
+
+const routesArg = getArgValue("--routes");
+const baseUrl = getArgValue("--base") || "http://localhost:3000";
+const routes = routesArg
+  ? routesArg.split(",").map((route) => route.trim()).filter(Boolean)
+  : ["/"];
+
+const viewports = [
+  { name: "mobile", viewport: devices["iPhone 15 Pro"].viewport },
+  { name: "tablet", viewport: { width: 1112, height: 834 } },
+  { name: "desktop", viewport: { width: 1440, height: 900 } },
+];
+
+(async () => {
+  const outputDir = path.join(projectRoot, "screenshots");
+  fs.mkdirSync(outputDir, { recursive: true });
+
+  const browser = await chromium.launch({ headless: true });
+
+  for (const route of routes) {
+    const safeRoute = route === "/" ? "home" : route.replace(/[\\/]/g, "-").replace(/^-+/, "");
+
+    for (const { name, viewport } of viewports) {
+      const page = await browser.newPage({ viewport });
+      const url = `${baseUrl}${route}`;
+      console.log(`▶ Zrzut ${url} (${name})`);
+      await page.goto(url, { waitUntil: "networkidle" });
+      await page.screenshot({
+        path: path.join(outputDir, `${safeRoute}-${name}.png`),
+        fullPage: true,
+      });
+      await page.close();
+    }
+  }
+
+  await browser.close();
+  console.log(`✅ Zrzuty zapisane w ${path.join(projectRoot, "screenshots")}`);
+})().catch((error) => {
+  console.error("❌ Nie udało się wygenerować zrzutów ekranu:", error);
+  process.exit(1);
+});
+
+function getArgValue(flag) {
+  const flagIndex = args.indexOf(flag);
+  if (flagIndex === -1) return null;
+  return args[flagIndex + 1] || null;
+}

@@ -1,0 +1,49 @@
+#!/usr/bin/env node
+
+/* eslint-disable @typescript-eslint/no-require-imports */
+
+/**
+ * Uruchamia Lighthouse na wskazanym adresie (domyślnie http://localhost:3000).
+ * Przykład:
+ *    node scripts/lighthouse-runner --url http://localhost:3000
+ */
+
+const { spawnSync } = require("child_process");
+const fs = require("fs");
+const path = require("path");
+
+const projectRoot = path.join(__dirname, "..");
+const args = process.argv.slice(2);
+const urlFlagIndex = args.indexOf("--url");
+const url =
+  (urlFlagIndex !== -1 && args[urlFlagIndex + 1]) ||
+  process.env.LH_URL ||
+  "http://localhost:3000";
+
+const reportsDir = path.join(projectRoot, "reports", "lighthouse");
+fs.mkdirSync(reportsDir, { recursive: true });
+const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+const outputPath = path.join(reportsDir, `lighthouse-${timestamp}.html`);
+
+console.log(`▶ Lighthouse dla ${url}`);
+const result = spawnSync(
+  "npx",
+  [
+    "lighthouse",
+    url,
+    "--output",
+    "html",
+    "--output-path",
+    outputPath,
+    "--quiet",
+    "--chrome-flags=--headless=new",
+  ],
+  { cwd: projectRoot, stdio: "inherit", shell: process.platform === "win32" }
+);
+
+if (result.status !== 0) {
+  console.error("❌ Lighthouse zakończył się błędem.");
+  process.exit(result.status ?? 1);
+}
+
+console.log(`✅ Raport zapisany: ${outputPath}`);

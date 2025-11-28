@@ -1,0 +1,57 @@
+#!/usr/bin/env node
+
+/* eslint-disable @typescript-eslint/no-require-imports */
+
+/**
+ * Zbiorczy runner testów: lint -> Playwright headed -> Lighthouse (jeżeli skonfigurowany).
+ * Flagi:
+ *   --skip-e2e        pomija Playwright
+ *   --skip-lighthouse pomija Lighthouse
+ */
+
+const { spawnSync } = require("child_process");
+const path = require("path");
+const pkg = require("../package.json");
+
+const projectRoot = path.join(__dirname, "..");
+const skipE2E = process.argv.includes("--skip-e2e");
+const skipLighthouse = process.argv.includes("--skip-lighthouse");
+
+runStep(["npm", "run", "lint"], "Lint (ESLint)");
+
+if (pkg.scripts?.["test:e2e:headed"]) {
+  if (skipE2E) {
+    console.log("ℹ️  Pomińnięto Playwright (flaga --skip-e2e).");
+  } else {
+    runStep(["npm", "run", "test:e2e:headed"], "Playwright (headed)");
+  }
+} else {
+  console.log("ℹ️  Brak skryptu test:e2e:headed — dodaj go, aby uruchamiać e2e.");
+}
+
+if (pkg.scripts?.["test:lighthouse"]) {
+  if (skipLighthouse) {
+    console.log("ℹ️  Pomińnięto Lighthouse (flaga --skip-lighthouse).");
+  } else {
+    runStep(["npm", "run", "test:lighthouse"], "Lighthouse");
+  }
+} else {
+  console.log("ℹ️  Brak skryptu test:lighthouse — skonfiguruj Lighthouse CLI, aby uruchamiać audyt.");
+}
+
+console.log("✅ Runner zakończony pomyślnie.");
+
+function runStep(commandWithArgs, label) {
+  const [command, ...args] = commandWithArgs;
+  console.log(`▶ ${label}`);
+  const result = spawnSync(command, args, {
+    cwd: projectRoot,
+    stdio: "inherit",
+    shell: process.platform === "win32",
+  });
+
+  if (result.status !== 0) {
+    console.error(`❌ ${label} zakończony z błędem (${result.status}).`);
+    process.exit(result.status ?? 1);
+  }
+}

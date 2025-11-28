@@ -6,7 +6,15 @@
     "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start -p 3000",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:lighthouse": "node ./scripts/lighthouse-runner",
+    "test:screenshots": "node ./scripts/screenshot-runner",
+    "test:all": "node ./scripts/test-runner",
+    "scaffold": "node ./scripts/generate-scaffold.js",
+    "init:project": "bash ./scripts/init.sh",
+    "validate": "bash ./scripts/validate.sh"
   },
   "dependencies": {
     "next": "16.0.5",
@@ -14,6 +22,7 @@
     "react-dom": "19.2.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.57.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -21,6 +30,7 @@
     "baseline-browser-mapping": "^2.8.32",
     "eslint": "^9",
     "eslint-config-next": "16.0.5",
+    "lighthouse": "^13.0.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
