@@ -43,6 +43,11 @@ export type NewsPost = {
   body: string;
 };
 
+export type Partner = {
+  name: string;
+  url?: string;
+};
+
 export const foundationInfo = {
   name: "Fundacja Przyjaźń bez Granic",
   tagline:
@@ -193,12 +198,12 @@ To dowód na naszą zdolność do działania dwukierunkowego – pozyskujemy zas
   },
 ];
 
-export const partners = [
-  "Baltic Digital Institute (BDI)",
-  "Fundacja Pomorska",
-  "Gmina Zdołbica",
-  "Fundacja Viktoriia",
-  "Stowarzyszenie Otwarte Kaszuby",
+export const partners: Partner[] = [
+  { name: "Baltic Digital Institute (BDI)", url: "https://www.baltic-digital.org/" },
+  { name: "Stowarzyszenie Otwarte Kaszuby", url: "https://otwartekaszuby.pl/" },
+  { name: "Fundacja Pomorska" },
+  { name: "Gmina Zdołbica" },
+  { name: "Fundacja Viktoriia" },
 ];
 
 export const governance = {

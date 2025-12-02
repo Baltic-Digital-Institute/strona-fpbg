@@ -1,4 +1,3 @@
-﻿14. Ze strony kontakt zmienic polozenie Stowarzyszenia aby bylo pod BDI oraz dodac przekierowania do stron w sekcji Partnerzy systemowi dla elementow:
-	Baltic Digital Institute (BDI) - https://www.baltic-digital.org/
+﻿	Baltic Digital Institute (BDI) - https://www.baltic-digital.org/
 	Stowarzyszenie Otwarte Kaszuby - https://otwartekaszuby.pl/
 15. Dodac karte projektu z pliku Karta projektu - wózki dla Dzierżążna.md. Dostosowac styl. Zamiast linkow maja byc miniatury z artykulow oraz pod miniaturami tytul artykulu z przekierowaniem na jego strone, masz przyklad jak to powinno mniej wiecej wygladac w pliku exampleLinks.png.  Sprawdzic czy wszedzie dzialaja przekierownia do karty pod trasa /projekty/wozki-rehabilitacyjne-2024

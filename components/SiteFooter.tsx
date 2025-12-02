@@ -23,7 +23,15 @@ export function SiteFooter() {
           <p className="font-semibold text-white">Partnerzy systemowi</p>
           <ul className="space-y-1 text-white/80">
             {partners.map((partner) => (
-              <li key={partner}>{partner}</li>
+              <li key={partner.name}>
+                {partner.url ? (
+                  <a href={partner.url} className="hover:text-white" rel="noreferrer" target="_blank">
+                    {partner.name}
+                  </a>
+                ) : (
+                  partner.name
+                )}
+              </li>
             ))}
           </ul>
         </div>
