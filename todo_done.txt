@@ -8,3 +8,4 @@
 7. Ze strony glownej usunac elementy Ekosystem BDI, Statyczny eksport SSG, Transparentnosc grantowa
 8. Ze strony glownej usunac powtarzaj?ce sie Solidarnosc, Partnerstwo, Odwaga, Skutecznosc (te co maja tekst koloru czarnego i sa pogrubione)
 9. Ze strony glownej usunac cala sekcje Strategia 2025-2028
+10. Ze strony o fundacji usunac element Sekcja ˆadu korporacyjnego speˆnia wymogi transparentno˜ci NOWEFIO i standard¢w grantodawc¢w.

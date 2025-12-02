@@ -8,6 +8,7 @@ export default function AboutPage() {
         <SectionHeading
           eyebrow="O fundacji"
           title="Pomorski Hub współpracy międzynarodowej"
+          as="h1"
           description="Fundacja Przyjaźń bez Granic buduje dwukierunkowe mosty – wzmacnia spójność społeczną w regionie i wspiera interwencje humanitarne za granicą."
         />
         <div className="grid gap-4 md:grid-cols-2">
@@ -97,9 +98,6 @@ export default function AboutPage() {
             </li>
           ))}
         </ul>
-        <div className="mt-6 rounded-2xl border border-primary/10 bg-primary/5 px-4 py-3 text-sm text-primary/80">
-          {governance.complianceNotes}
-        </div>
       </section>
     </div>
   );

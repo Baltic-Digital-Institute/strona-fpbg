@@ -218,8 +218,6 @@ export const governance = {
     "Krzysztof Lizak - Prezes Zarządu",
     "Oksana Antsyferova - Członkini Zarządu",
   ],
-  complianceNotes:
-    "Sekcja ładu korporacyjnego spełnia wymogi transparentności NOWEFIO i standardów grantodawców.",
 };
 
 export const contactInfo = {

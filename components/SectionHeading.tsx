@@ -3,6 +3,7 @@ type Props = {
   title: string;
   description?: string;
   align?: "left" | "center";
+  as?: "h1" | "h2" | "h3";
 };
 
 export function SectionHeading({
@@ -10,9 +11,11 @@ export function SectionHeading({
   title,
   description,
   align = "left",
+  as = "h2",
 }: Props) {
   const alignment =
     align === "center" ? "items-center text-center" : "items-start text-left";
+  const HeadingTag = as;
 
   return (
     <div className={`flex flex-col gap-2 ${alignment}`}>
@@ -21,9 +24,10 @@ export function SectionHeading({
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="font-serif text-3xl leading-tight text-primary md:text-4xl">
+      {/* Elastyczny poziom nagłówka poprawia hierarchię semantyczną stron */}
+      <HeadingTag className="font-serif text-3xl leading-tight text-primary md:text-4xl">
         {title}
-      </h2>
+      </HeadingTag>
       {description ? (
         <p className="max-w-3xl text-base text-primary/80">{description}</p>
       ) : null}
