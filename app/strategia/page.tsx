@@ -8,6 +8,7 @@ export default function StrategyPage() {
       <SectionHeading
         eyebrow="Strategia 2025-2028"
         title="Skuteczność i skalowalność w trzech filarach"
+        as="h1"
         description="Strategia FPbG łączy misję społeczną z mierzalnymi KPI. Każdy filar ma określone inicjatywy i rezultaty zgodne ze Specyfikacją Wdrożeniową."
       />
 
@@ -20,9 +21,9 @@ export default function StrategyPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
               {pillar.subtitle}
             </p>
-            <h3 className="mt-2 text-xl font-semibold text-primary">
+            <h2 className="mt-2 text-xl font-semibold text-primary">
               {pillar.title}
-            </h3>
+            </h2>
             <p className="mt-2 text-sm text-primary/80">{pillar.description}</p>
             <div className="mt-4 space-y-2 text-sm font-semibold text-primary">
               {pillar.kpis.map((kpi) => (
@@ -46,18 +47,6 @@ export default function StrategyPage() {
         ))}
       </div>
 
-      <div className="space-y-4 rounded-3xl border border-primary/10 bg-sand p-6 shadow-sm shadow-primary/5">
-        <SectionHeading
-          eyebrow="Metodyka"
-          title="Model SSG i pasywne bezpieczeństwo"
-          description="Strona FPbG działa w modelu statycznego eksportu (Next.js SSG), bez formularzy i bez zbierania danych wrażliwych. Minimalizuje to powierzchnię ataku i koszty utrzymania."
-        />
-        <ul className="space-y-2 text-sm text-primary/80">
-          <li>• Brak kont użytkownika i formularzy – architektura pasywnego bezpieczeństwa.</li>
-          <li>• Jedno źródło prawdy: treści utrzymywane w repozytorium i plikach contentowych.</li>
-          <li>• Audytowalność: sekcje projektowe zawierają metryki, partnerów i odnośniki do dowodów medialnych.</li>
-        </ul>
-      </div>
     </div>
   );
 }
