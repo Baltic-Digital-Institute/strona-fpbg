@@ -18,7 +18,7 @@ export default function Home() {
         <div className="absolute -left-10 top-10 h-40 w-40 rounded-full bg-white/5 blur-3xl" />
         <div className="absolute -bottom-16 right-4 h-52 w-52 rounded-full bg-sand/20 blur-3xl" />
         <div className="relative mx-auto flex max-w-6xl flex-col gap-6 px-4 py-16 md:px-6 md:py-24">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent/80">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/80">
             {foundationInfo.name}
           </p>
           <h1 className="font-serif text-4xl leading-tight md:text-5xl">
