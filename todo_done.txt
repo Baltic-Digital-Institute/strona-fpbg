@@ -1,15 +1,16 @@
-ï»¿1. Domyslnie ustaw aplikacje na porcie 3000
-2. Oczyâ€˜>Å½Ã
- szablon projektu co zostaâ€˜' automatycznie wygenerowany przy tworzeniu nowego projektu przy uâ€˜â€¢yciu Next.js tak aby zostaâ€˜'y tylko to co niezbÅ½tdne do utworzenia nowego projektu caâ€˜'kowicie od nowa.
-3. W katalogu scripts stwÃ†Ë†rz skrypty zapewniajÅ½ce kompletny przepâ€˜'yw pracy dla programisty: zainicjowanie projektu, zdefiniowanie jego struktury, automatyczne generowanie kodu szablonowego, sprawdzenie konfiguracji
-4. Zaprojektuj i stwÃ†Ë†rz peâ€˜'ny projekt nowoczesnej i profesjonalnej strony internetowej dla 'Fundacja Przyjaâ€˜Â­â€˜ bez Granic' zgodnie ze specyfikacjami
-5. Jeâ€˜>li sÅ½ jeszcze jakieâ€˜> nieistniejÅ½ce podstrony (trasy), dorob je.
-6. Rozwiaz problemy z narzÂ©dzia axe DevTools opisane w pliku axe-problems.txt
+1. Domyslnie ustaw aplikacje na porcie 3000
+2. Oczy‘>Ž?
+ szablon projektu co zosta‘' automatycznie wygenerowany przy tworzeniu nowego projektu przy u‘•yciu Next.js tak aby zosta‘'y tylko to co niezbŽtdne do utworzenia nowego projektu ca‘'kowicie od nowa.
+3. W katalogu scripts stwA^rz skrypty zapewniajŽce kompletny przep‘'yw pracy dla programisty: zainicjowanie projektu, zdefiniowanie jego struktury, automatyczne generowanie kodu szablonowego, sprawdzenie konfiguracji
+4. Zaprojektuj i stwA^rz pe‘'ny projekt nowoczesnej i profesjonalnej strony internetowej dla 'Fundacja Przyja‘­‘ bez Granic' zgodnie ze specyfikacjami
+5. Je‘>li sŽ jeszcze jakie‘> nieistniejŽce podstrony (trasy), dorob je.
+6. Rozwiaz problemy z narz©dzia axe DevTools opisane w pliku axe-problems.txt
 7. Ze strony glownej usunac elementy Ekosystem BDI, Statyczny eksport SSG, Transparentnosc grantowa
 8. Ze strony glownej usunac powtarzaj?ce sie Solidarnosc, Partnerstwo, Odwaga, Skutecznosc (te co maja tekst koloru czarnego i sa pogrubione)
 9. Ze strony glownej usunac cala sekcje Strategia 2025-2028
-10. Ze strony o fundacji usunac element Sekcja Ë†adu korporacyjnego speË†nia wymogi transparentnoËœci NOWEFIO i standardÂ¢w grantodawcÂ¢w.
-11. Ze strony o fundacji zmieniâ€  rada na Rada (pierwsza litera z wielkiej)
+10. Ze strony o fundacji usunac element Sekcja ^adu korporacyjnego spe^nia wymogi transparentno~ci NOWEFIO i standardcw grantodawccw.
+11. Ze strony o fundacji zmieni† rada na Rada (pierwsza litera z wielkiej)
 12. Ze strony strategia usunac cala sekcje Metodyka
 13. Ze strony o fundacji zaktualizuj link do Statut Fundacji (PDF) na https://drive.google.com/file/d/13KaPOJZH3ThClfRdFWsrskPhw-4ImdSi/view?usp=sharing
 14. Ze strony kontakt zmienic polozenie Stowarzyszenia aby bylo pod BDI oraz dodac przekierowania do stron w sekcji Partnerzy systemowi (BDI, Stowarzyszenie Otwarte Kaszuby)
+15. Dodano karte projektu wozki rehabilitacyjne 2024 z miniaturami i trasami

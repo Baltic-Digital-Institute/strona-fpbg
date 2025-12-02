@@ -31,7 +31,7 @@ export type Project = {
   action: string;
   partners: string[];
   fundingSources: string[];
-  auditLinks: { label: string; url: string }[];
+  auditLinks: { label: string; url: string; thumbnail?: string }[];
 };
 
 export type NewsPost = {
@@ -136,40 +136,49 @@ export const strategyPillars: StrategyPillar[] = [
 export const projects: Project[] = [
   {
     slug: "wozki-rehabilitacyjne-2024",
-    title: "30 wózków rehabilitacyjnych dla szpitala w Dzierżążnie",
+    title: "30 wozkow rehabilitacyjnych dla szpitala w Dzierzaznie",
     status: "Zrealizowany",
     period: "2024",
-    strategicPillar: "Filar III: Solidarność bez Granic",
+    strategicPillar: "Filar III: Solidarnosc bez Granic",
     summary:
-      "Dwukierunkowa solidarność – pozyskaliśmy 30 wózków rehabilitacyjnych o wartości 120 tys. zł dzięki współpracy transgranicznej.",
+      "Dwukierunkowa solidarnosc - 30 wozkow rehabilitacyjnych o wartosci 120 000 PLN trafilo do szpitala w Dzierzaznie jako gest wdziecznosci partnerow z Ukrainy.",
     metrics: [
-      { label: "Wózki", value: "30" },
-      { label: "Wartość darowizny", value: "120 000 PLN" },
+      { label: "Wozki", value: "30" },
+      { label: "Wartosc darowizny", value: "120 000 PLN" },
       { label: "Rok realizacji", value: "2024" },
     ],
-    beneficiaries: "Pacjenci i zespół szpitala w Dzierżążnie",
+    beneficiaries:
+      "Pacjenci i zespol szpitala w Dzierzaznie oraz lokalna spolecznosc Pomorza",
     context:
-      "Projekt dowodzi naszej zdolności do pozyskiwania zasobów z zagranicy i wzmacniania infrastruktury pomorskich placówek zdrowia.",
+      "Akcja Wozki dla Szpitala pokazala, ze wsparcie otrzymane przez naszych partnerow z Ukrainy wraca do Pomorza. Sprzet medyczny jest dowodem wdziecznosci i realnej wspolpracy transgranicznej.",
     action:
-      "Koordynacja przekazania 30 wózków rehabilitacyjnych we współpracy z partnerami z Ukrainy i regionu Pomorza.",
-    partners: ["Fundacja Viktoriia", "Lokalni partnerzy Pomorza"],
-    fundingSources: ["Fundacja Viktoriia (darowizna)", "wkład FPbG"],
+      "Zorganizowalismy transport i przekazanie 30 wozkow rehabilitacyjnych wraz z Fundacja Viktoriia i Stowarzyszeniem Otwarte Kaszuby, koordynujac logistyke i komunikacje ze szpitalem.",
+    partners: [
+      "Fundacja Viktoriia",
+      "Stowarzyszenie Otwarte Kaszuby",
+      "Szpital w Dzierzaznie",
+    ],
+    fundingSources: ["Fundacja Viktoriia (darowizna)", "wklad FPbG"],
     auditLinks: [
       {
         label: "Express Kaszubski",
         url: "https://expresskaszubski.pl/pl/11_wiadomosci/49157_dzierzazno-dzieki-polsko-ukrainskiej-wspolpracy-do-szpitala-trafilo-30-wozkow.html",
+        thumbnail: "/screenshots/projekty/express-kaszubski.png",
       },
       {
-        label: "Nasze Miasto Żukowo",
+        label: "Nasze Miasto Zukowo",
         url: "https://zukowo.naszemiasto.pl/spolecznicy-z-ukrainy-przekazali-wozki-inwalidzkie/ar/c14-9534271",
+        thumbnail: "/screenshots/projekty/nasze-miasto-zukowo.png",
       },
       {
-        label: "Radio Kaszëbë",
+        label: "Radio Kaszebe",
         url: "https://radiokaszebe.pl/30-nowych-wozkow-rehabilitacyjnych-w-dzierzaznie/",
+        thumbnail: "/screenshots/projekty/radio-kaszebe.png",
       },
       {
-        label: "Dziennik Bałtycki",
+        label: "Dziennik Baltycki",
         url: "https://dziennikbaltycki.pl/spolecznicy-z-ukrainy-przekazali-wozki-inwalidzkie-szpitalowi-w-dzierzaznie/gh/c14-18106465",
+        thumbnail: "/screenshots/projekty/dziennik-baltycki.png",
       },
     ],
   },
