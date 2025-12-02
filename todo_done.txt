@@ -6,3 +6,4 @@
 5. Je‘>li sŽ jeszcze jakie‘> nieistniejŽce podstrony (trasy), dorob je.
 6. Rozwiaz problemy z narz©dzia axe DevTools opisane w pliku axe-problems.txt
 7. Ze strony glownej usunac elementy Ekosystem BDI, Statyczny eksport SSG, Transparentnosc grantowa
+8. Ze strony glownej usunac powtarzaj?ce sie Solidarnosc, Partnerstwo, Odwaga, Skutecznosc (te co maja tekst koloru czarnego i sa pogrubione)

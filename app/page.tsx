@@ -4,7 +4,6 @@ import { StatusBadge } from "@/components/StatusBadge";
 import {
   foundationInfo,
   strategyPillars,
-  values,
   projects,
 } from "@/content/data";
 
@@ -47,30 +46,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl space-y-8 px-4 md:px-6">
-        <SectionHeading
-          eyebrow="Nasze wartości"
-          title="Wartości, które prowadzą nasze działania"
-          description="Empatyczny, sprawczy i zorganizowany sposób działania FPbG opiera się na czterech filarach wartościowych, zdefiniowanych w specyfikacji wdrożeniowej."
-        />
-        <div className="grid gap-4 md:grid-cols-2">
-          {values.map((value) => (
-            <div
-              key={value.title}
-              className="rounded-3xl border border-primary/10 bg-white p-6 shadow-sm shadow-primary/5"
-            >
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                {value.accent}
-              </p>
-              <h3 className="mt-3 text-xl font-semibold text-primary">
-                {value.title}
-              </h3>
-              <p className="mt-2 text-primary/80">{value.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {featuredProject ? (
         <section className="mx-auto max-w-6xl rounded-3xl bg-white px-4 py-10 shadow-lg shadow-primary/10 md:px-6">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -78,9 +53,9 @@ export default function Home() {
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
                 Aktualnie realizowane projekty
               </p>
-              <h3 className="font-serif text-2xl leading-tight text-primary md:text-3xl">
+              <h2 className="font-serif text-2xl leading-tight text-primary md:text-3xl">
                 {featuredProject.title}
-              </h3>
+              </h2>
               <p className="max-w-2xl text-primary/80">
                 {featuredProject.summary}
               </p>
