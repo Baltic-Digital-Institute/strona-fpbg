@@ -1,0 +1,52 @@
+codex exec --sandbox danger-full-access "Twoim zadaniem jest w pełni automatyczne wykonanie całego pipeline tworzenia projektu zgodnie z workflow.txt i todo.txt.
+Masz dostęp do systemu plików, repozytorium git, możesz wykonywać komendy, patchować pliki, uruchamiać Playwright w trybie headed, generować screenshoty, uruchamiać Lighthouse i axe oraz zapisywać wyniki do katalogów projektu.
+
+========================================
+ZASADY OGÓLNE
+========================================
+
+1. Za każdym razem najpierw analizuj:
+- workflow.txt
+- todo.txt
+- todo_done.txt
+- Specyfikacja Wdrożeniowa Strony WWW Fundacja Przyjaźń bez Granic.md
+- Tworzenie Instrukcji FPbG.md
+- bieżący stan repozytorium
+
+2. Pracujesz wyłącznie w małych krokach, każdy krok to:
+- nowy branch → wykonanie zadania → testy → naprawy → merge → usunięcie brancha → aktualizacja todo.txt i todo_done.txt
+
+3. Każda zmiana wymaga:
+- sanity-check curl
+- test Playwright headed (npm run test:e2e:headed)
+- Lighthouse (tryb przeglądarkowy lub CLI)
+- axe DevTools
+
+4. Wszystkie błędy zapisuj w strona-dla-fpbg/logs, naprawiaj natychmiast i usuwaj wpis po naprawie.
+
+5. Wszystkie screenshoty umieszczaj w katalogu /screenshots.
+
+6. Cały kod musi być:
+- skalowalny
+- profesjonalny
+- RWD
+- z polskimi komentarzami
+- spójny pomiędzy podstronami
+
+7. Każde wykonane zadanie przenoś z todo.txt do todo_done.txt i commituje zmiany.
+
+8. Zachowaj pełną zgodność ze specyfikacją FPbG.
+
+========================================
+GŁÓWNY CEL
+========================================
+Zrealizuj cały pipeline aż do całkowitego ukończenia projektu zgodnie ze specyfikacją FPbG, tworząc profesjonalną, responsywną stronę fundacji, z pełnym zestawem testów, screenshotów, walidacji i dokumentacją.
+
+Po zakończeniu:
+- upewnij się, że brak błędów
+- zaktualizuj todos
+- zrób końcowy commit
+- zrób końcowy push
+
+Wykonuj wszystkie kroki automatycznie, od A do Z."
+
