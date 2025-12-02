@@ -3,3 +3,4 @@
 3. W katalogu scripts stwÆˆrz skrypty zapewniajŽce kompletny przep‘'yw pracy dla programisty: zainicjowanie projektu, zdefiniowanie jego struktury, automatyczne generowanie kodu szablonowego, sprawdzenie konfiguracji
 4. Zaprojektuj i stwÆˆrz pe‘'ny projekt nowoczesnej i profesjonalnej strony internetowej dla 'Fundacja Przyja‘­‘ bez Granic' zgodnie ze specyfikacjami
 5. Je‘>li sŽ jeszcze jakie‘> nieistniejŽce podstrony (trasy), dorob je.
+6. Rozwiaz problemy z narz©dzia axe DevTools opisane w pliku axe-problems.txt

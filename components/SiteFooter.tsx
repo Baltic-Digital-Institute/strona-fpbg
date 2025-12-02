@@ -6,7 +6,7 @@ export function SiteFooter() {
     <footer className="mt-16 border-t border-primary/10 bg-primary text-white">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-3 md:px-6">
         <div className="space-y-3">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/80">
             {foundationInfo.name}
           </p>
           <p className="text-lg font-serif leading-relaxed">{foundationInfo.tagline}</p>
