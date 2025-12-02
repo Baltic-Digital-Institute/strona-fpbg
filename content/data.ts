@@ -211,7 +211,7 @@ export const governance = {
   documents: [
     {
       label: "Statut Fundacji (PDF)",
-      url: "https://drive.google.com/file/d/1KDoCbSbMrn8VOZtt5S5-a29_0aKPhrD6/view?usp=sharing",
+      url: "https://drive.google.com/file/d/13KaPOJZH3ThClfRdFWsrskPhw-4ImdSi/view?usp=sharing",
     },
   ],
   board: [
