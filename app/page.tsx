@@ -44,11 +44,6 @@ export default function Home() {
               Poznaj strategię 2025-2028
             </Link>
           </div>
-          <div className="flex flex-wrap gap-3 text-xs text-white/80">
-            <StatusBadge label="Ekosystem BDI" tone="info" />
-            <StatusBadge label="Statyczny eksport SSG" tone="info" />
-            <StatusBadge label="Transparentność grantowa" tone="success" />
-          </div>
         </div>
       </section>
 

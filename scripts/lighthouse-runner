@@ -3,14 +3,16 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 
 /**
- * Uruchamia Lighthouse na wskazanym adresie (domyślnie http://localhost:3000).
- * Przykład:
+ * Uruchamia Lighthouse na wskazanym adresie (domyslnie http://localhost:3000).
+ * Przyklad:
  *    node scripts/lighthouse-runner --url http://localhost:3000
  */
 
-const { spawnSync } = require("child_process");
 const fs = require("fs");
 const path = require("path");
+const lighthouseModule = require("lighthouse");
+const chromeLauncher = require("chrome-launcher");
+const lighthouse = lighthouseModule.default || lighthouseModule;
 
 const projectRoot = path.join(__dirname, "..");
 const args = process.argv.slice(2);
@@ -25,25 +27,34 @@ fs.mkdirSync(reportsDir, { recursive: true });
 const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
 const outputPath = path.join(reportsDir, `lighthouse-${timestamp}.html`);
 
-console.log(`▶ Lighthouse dla ${url}`);
-const result = spawnSync(
-  "npx",
-  [
-    "lighthouse",
-    url,
-    "--output",
-    "html",
-    "--output-path",
-    outputPath,
-    "--quiet",
-    "--chrome-flags=--headless=new",
-  ],
-  { cwd: projectRoot, stdio: "inherit", shell: process.platform === "win32" }
-);
+async function runLighthouse() {
+  console.log(`-> Lighthouse dla ${url}`);
+  const chrome = await chromeLauncher.launch({
+    chromeFlags: ["--headless=new", "--no-sandbox", "--disable-dev-shm-usage"],
+  });
 
-if (result.status !== 0) {
-  console.error("❌ Lighthouse zakończył się błędem.");
-  process.exit(result.status ?? 1);
+  try {
+    const runnerResult = await lighthouse(url, {
+      port: chrome.port,
+      output: "html",
+      logLevel: "info",
+    });
+
+    const reportHtml = Array.isArray(runnerResult.report)
+      ? runnerResult.report[0]
+      : runnerResult.report;
+    fs.writeFileSync(outputPath, reportHtml);
+    console.log(`ok Raport zapisany: ${outputPath}`);
+  } catch (error) {
+    console.error("x Lighthouse zakonczyl sie bledem.", error);
+    process.exit(1);
+  } finally {
+    try {
+      await chrome.kill();
+    } catch (cleanupError) {
+      console.warn("! Ostrzezenie podczas zamykania Chrome:", cleanupError.message);
+    }
+  }
 }
 
-console.log(`✅ Raport zapisany: ${outputPath}`);
+runLighthouse();
