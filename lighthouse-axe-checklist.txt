@@ -1,0 +1,30 @@
+Lighthouse & AXE Checklist
+Cel: minimalne progi jakości przed bramką G3 (Go-Live) i G4 (Stabilizacja).
+Tryb: non‑blocking na PR (raporty), blocking na release/tag.
+
+Progi minimalne (domyślnie)
+Performance: ≥ 90 (mobile) / ≥ 95 (desktop) na strony: /, kluczowe landing pages, formularze.
+Accessibility: ≥ 95; brak krytycznych błędów AXE (severity: critical/serious = 0).
+Best Practices: ≥ 95
+SEO: ≥ 95
+
+Kontrola dostępności (AXE)
+-Brak elementów bez accessible name (linki, przyciski, pola formularzy).
+-Poprawny kontrast (WCAG AA): tekst, ikony, stany focus/hover.
+-Wyraźna kolejność focus; widoczny styl focus; brak tabindex > 0.
+-Semantyka: nagłówki w kolejności, landmarki (header, main, nav, footer).
+-Teksty alternatywne dla obrazów; dekoracyjne z role="presentation"/puste alt.
+-Formularze: etykiety powiązane, komunikaty błędów programistycznie.
+
+Wydajność (Lighthouse)
+-Lazy‑loading obrazów i iframów (loading="lazy").
+-Optymalizacja fontów (preload, display=swap, mniejszy subset).
+-Użycie next/image z sizes dla responsywności.
+-Ograniczenie JS na kluczowych stronach: code‑splitting, unikanie ciężkich polyfilli.
+-Cache i CDN (Vercel), Cache-Control dla assetów.
+
+SEO
+-Unikalny <title> i meta description dla każdej strony.
+-Kanoniczne adresy, sitemap, robots.txt, strukturalne dane (JSON‑LD).
+-Brak błędów linków (404) i przekierowań łańcuchowych.
+

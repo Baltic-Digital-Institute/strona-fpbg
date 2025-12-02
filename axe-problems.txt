@@ -1,0 +1,145 @@
+Elements must meet minimum color contrast ratio thresholds Total Issues:11
+1/11
+Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+
+more information Link opens in a new window
+Element Location:
+.gap-3.items-center.flex > div:nth-child(2) > .tracking-\[0\.18em\].uppercase.text-accent
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent">Fundacja Przyjaźń bez Granic</p>
+To solve this problem, you need to fix the following:
+Element has insufficient color contrast of 2.66 (foreground color: #e07a5f, background color: #f7f3e8, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+Related Nodes
+<header class="sticky top-0 z-30 border-b border-primary/10 bg-sand/95 backdrop-blur-md">
+<body class="lato_cc832415-module__WcbfNq__variable roboto_slab_468f3af1-module__CYylAG__variable antialiased bg-sand text-primary">
+
+2/11
+Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+
+more information Link opens in a new window
+Element Location:
+.px-5.shadow-lg.shadow-accent\/30
+<a class="rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/30 transition hover:bg-accent-hover" href="/kontakt">Skontaktuj się z nami</a>
+To solve this problem, you need to fix the following:
+Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #e07a5f, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
+
+Related Node
+<a class="rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/30 transition hover:bg-accent-hover" href="/kontakt">Skontaktuj się z nami</a>
+
+3/11
+Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+
+more information Link opens in a new window
+Element Location:
+.p-6.shadow-primary\/5.rounded-3xl:nth-child(1) > .tracking-\[0\.2em\].uppercase.text-accent
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent">SOLIDARNOŚĆ</p>
+To solve this problem, you need to fix the following:
+Element has insufficient color contrast of 2.95 (foreground color: #e07a5f, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+Related Node
+<div class="rounded-3xl border border-primary/10 bg-white p-6 shadow-sm shadow-primary/5">
+
+4/11
+Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+
+more information Link opens in a new window
+Element Location:
+.p-6.shadow-primary\/5.rounded-3xl:nth-child(2) > .tracking-\[0\.2em\].uppercase.text-accent
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent">PARTNERSTWO</p>
+To solve this problem, you need to fix the following:
+Element has insufficient color contrast of 2.95 (foreground color: #e07a5f, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+Related Node
+<div class="rounded-3xl border border-primary/10 bg-white p-6 shadow-sm shadow-primary/5">
+
+5/11
+Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+
+more information Link opens in a new window
+Element Location:
+.p-6.shadow-primary\/5.rounded-3xl:nth-child(3) > .tracking-\[0\.2em\].uppercase.text-accent
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent">ODWAGA</p>
+To solve this problem, you need to fix the following:
+Element has insufficient color contrast of 2.95 (foreground color: #e07a5f, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+Related Node
+<div class="rounded-3xl border border-primary/10 bg-white p-6 shadow-sm shadow-primary/5">
+
+6/11
+Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+
+more information Link opens in a new window
+Element Location:
+.p-6.shadow-primary\/5.rounded-3xl:nth-child(4) > .tracking-\[0\.2em\].uppercase.text-accent
+<p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent">SKUTECZNOŚĆ</p>
+To solve this problem, you need to fix the following:
+Element has insufficient color contrast of 2.95 (foreground color: #e07a5f, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+Related Node
+<div class="rounded-3xl border border-primary/10 bg-white p-6 shadow-sm shadow-primary/5">
+
+7/11
+Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+
+more information Link opens in a new window
+Element Location:
+.space-y-2 > .tracking-\[0\.18em\].uppercase.text-accent
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent">Aktualnie realizowane projekty</p>
+To solve this problem, you need to fix the following:
+Element has insufficient color contrast of 2.95 (foreground color: #e07a5f, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+Related Node
+<section class="mx-auto max-w-6xl rounded-3xl bg-white px-4 py-10 shadow-lg shadow-primary/10 md:px-6">
+
+8/11
+Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+
+more information Link opens in a new window
+Element Location:
+.mt-6 > .bg-sage\/15.text-sage.border-sage\/40
+<span class="inline-flex items-center rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wide bg-sage/15 text-sage border-sage/40">Zrealizowany</span>
+To solve this problem, you need to fix the following:
+Element has insufficient color contrast of 2.82 (foreground color: #2a9d8f, background color: #dff0ee, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+Related Nodes
+<span class="inline-flex items-center rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wide bg-sage/15 text-sage border-sage/40">Zrealizowany</span>
+<section class="mx-auto max-w-6xl rounded-3xl bg-white px-4 py-10 shadow-lg shadow-primary/10 md:px-6">
+
+9/11
+Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+
+more information Link opens in a new window
+Element Location:
+.h-full.flex-col.p-6:nth-child(1) > .tracking-\[0\.18em\].uppercase.text-accent
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent">„Witaj w domu” - Integracja i nowe kompetencje</p>
+To solve this problem, you need to fix the following:
+Element has insufficient color contrast of 2.95 (foreground color: #e07a5f, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+Related Node
+<div class="flex h-full flex-col rounded-3xl border border-primary/10 bg-white p-6 shadow-sm shadow-primary/5">
+
+10/11
+Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+
+more information Link opens in a new window
+Element Location:
+.h-full.flex-col.p-6:nth-child(2) > .tracking-\[0\.18em\].uppercase.text-accent
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent">„Mosty” - partnerstwa i mobilność międzynarodowa</p>
+To solve this problem, you need to fix the following:
+Element has insufficient color contrast of 2.95 (foreground color: #e07a5f, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+Related Node
+<div class="flex h-full flex-col rounded-3xl border border-primary/10 bg-white p-6 shadow-sm shadow-primary/5">
+
+11/11
+Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds
+
+more information Link opens in a new window
+Element Location:
+.h-full.flex-col.p-6:nth-child(3) > .tracking-\[0\.18em\].uppercase.text-accent
+<p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent">„Pomocna Dłoń” - interwencje humanitarne</p>
+To solve this problem, you need to fix the following:
+Element has insufficient color contrast of 2.95 (foreground color: #e07a5f, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+Related Node
+<div class="flex h-full flex-col rounded-3xl border border-primary/10 bg-white p-6 shadow-sm shadow-primary/5">

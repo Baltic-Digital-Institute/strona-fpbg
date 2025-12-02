@@ -1,5 +1,12 @@
-﻿6. UĹĽywaj w trybie headed Playwright tak abym wiedziaĹ‚ jak pracujesz i wykonujesz screenshot.
-7. UĹĽyjwaj rozszerzenia z przeglÄ…darki chrome Lighthouse oraz axe DevTools.
-8. Screenshot's maja byc trzymane w katalogu screenshots.
-9. Przetestuj caĹ‚y projekt i napraw.
-10. SprawdĹş zgodnoĹ›Ä‡ informacji na stronie z plikami Specyfikacja WdroĹĽeniowa Strony WWW Fundacja PrzyjaĹşĹ„ bez Granic.md oraz Tworzenie Instrukcji FPbG.md
+﻿6. Rozwiaz problemy z narzędzia axe DevTools opisane w pliku axe-problems.txt
+7. Ze strony glownej usunac elementy Ekosystem BDI, Statyczny eksport SSG, Transparentnosc grantowa
+8. Ze strony glownej usunac powtarzające sie Solidarnosc, Partnerstwo, Odwaga, Skutecznosc (te co maja tekst koloru czarnego i sa pogrubione)
+9. Ze strony glownej usunac cala sekcje Strategia 2025-2028
+10. Ze strony o fundacji usunac element Sekcja ładu korporacyjnego spełnia wymogi transparentności NOWEFIO i standardów grantodawców.
+11. Ze strony o fundacji zmienić rada na Rada (pierwsza litera z wielkiej)
+12. Ze strony strategia usunac cala sekcje Metodyka
+13. Ze strony o fundacji zaktualizuj link do Statut Fundacji (PDF) na https://drive.google.com/file/d/13KaPOJZH3ThClfRdFWsrskPhw-4ImdSi/view?usp=sharing
+14. Ze strony kontakt zmienic polozenie Stowarzyszenia aby bylo pod BDI oraz dodac przekierowania do stron w sekcji Partnerzy systemowi dla elementow:
+	Baltic Digital Institute (BDI) - https://www.baltic-digital.org/
+	Stowarzyszenie Otwarte Kaszuby - https://otwartekaszuby.pl/
+15. Dodac karte projektu z pliku Karta projektu - wózki dla Dzierżążna.md. Dostosowac styl. Zamiast linkow maja byc miniatury z artykulow oraz pod miniaturami tytul artykulu z przekierowaniem na jego strone, masz przyklad jak to powinno mniej wiecej wygladac w pliku exampleLinks.png.  Sprawdzic czy wszedzie dzialaja przekierownia do karty pod trasa /projekty/wozki-rehabilitacyjne-2024
