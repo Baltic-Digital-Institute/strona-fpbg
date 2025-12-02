@@ -1,5 +1,4 @@
-﻿11. Ze strony o fundacji zmienić rada na Rada (pierwsza litera z wielkiej)
-12. Ze strony strategia usunac cala sekcje Metodyka
+﻿12. Ze strony strategia usunac cala sekcje Metodyka
 13. Ze strony o fundacji zaktualizuj link do Statut Fundacji (PDF) na https://drive.google.com/file/d/13KaPOJZH3ThClfRdFWsrskPhw-4ImdSi/view?usp=sharing
 14. Ze strony kontakt zmienic polozenie Stowarzyszenia aby bylo pod BDI oraz dodac przekierowania do stron w sekcji Partnerzy systemowi dla elementow:
 	Baltic Digital Institute (BDI) - https://www.baltic-digital.org/

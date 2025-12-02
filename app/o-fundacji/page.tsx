@@ -85,7 +85,7 @@ export default function AboutPage() {
       <section className="rounded-3xl border border-primary/10 bg-white p-6 shadow-sm shadow-primary/5">
         <SectionHeading
           eyebrow="Organy i zespół"
-          title="Zarząd i rada fundacji"
+          title="Zarząd i Rada Fundacji"
           description="Struktura zarządcza FPbG, która zapewnia transparentność, odpowiedzialność i ciągłość decyzyjną."
         />
         <ul className="mt-4 grid gap-3 md:grid-cols-2">
