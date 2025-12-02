@@ -1,10 +1,7 @@
 import Link from "next/link";
 import { SectionHeading } from "@/components/SectionHeading";
 import { StatusBadge } from "@/components/StatusBadge";
-import {
-  foundationInfo,
-  projects,
-} from "@/content/data";
+import { foundationInfo, values, projects } from "@/content/data";
 
 export default function Home() {
   const featuredProject = projects[0];
@@ -42,6 +39,27 @@ export default function Home() {
               Poznaj strategię 2025-2028
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl space-y-8 px-4 md:px-6">
+        <SectionHeading
+          eyebrow="Nasze wartości"
+          title="Wartości, które prowadzą nasze działania"
+          description="Empatyczny, sprawczy i zorganizowany sposób działania FPbG opiera się na czterech filarach wartościowych, zdefiniowanych w specyfikacji wdrożeniowej."
+        />
+        <div className="grid gap-4 md:grid-cols-2">
+          {values.map((value) => (
+            <div
+              key={value.title}
+              className="rounded-3xl border border-primary/10 bg-white p-6 shadow-sm shadow-primary/5"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+                {value.accent}
+              </p>
+              <p className="mt-3 text-primary/80">{value.description}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -84,8 +102,6 @@ export default function Home() {
           </div>
         </section>
       ) : null}
-
-
     </div>
   );
 }
