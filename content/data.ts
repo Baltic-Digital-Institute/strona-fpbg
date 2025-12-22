@@ -217,7 +217,7 @@ export const partners: Partner[] = [
 
 export const governance = {
   register: {
-    krs: "000000000",
+    krs: "0001035724",
     nip: "5842835506",
     regon: "525383411",
     address: "ul. Hołdu Pruskiego 6, 80-321 Gdańsk",
